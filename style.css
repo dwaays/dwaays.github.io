@@ -11,12 +11,14 @@ body {
   max-width: 680px;
   margin: auto;
   padding: 40px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .topbar {
   position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 999;
 }
 
 #toggleBtn {
@@ -41,6 +43,7 @@ h1 {
   letter-spacing: -1px;
   color: #ffffff;
   line-height: 1.1;
+  cursor: pointer;
 }
 
 .tagline {
@@ -80,6 +83,7 @@ button {
   border-radius: 980px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .skill {
@@ -136,18 +140,23 @@ body.light h1 {
   color: #1d1d1f;
 }
 
+body.light .section {
+  border-bottom: 1px solid #dddddd;
+}
+
+body.light .hero {
+  border-bottom: 1px solid #dddddd;
+}
+
+body.light #toggleBtn {
+  background-color: #e8e8e8;
+  color: #1d1d1f;
+  border: 1px solid #cccccc;
+}
+
 @media (max-width: 480px) {
-  h1 {
-    font-size: 32px;
-  }
-  .tagline {
-    font-size: 15px;
-  }
-  body {
-    padding: 20px 16px;
-  }
-  button {
-    width: 100%;
-    text-align: center;
-  }
+  h1 { font-size: 32px; }
+  .tagline { font-size: 15px; }
+  body { padding: 20px 16px; }
+  button { width: 100%; text-align: center; }
 }
