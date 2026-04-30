@@ -160,3 +160,17 @@ body.light #toggleBtn {
   body { padding: 20px 16px; }
   button { width: 100%; text-align: center; }
 }
+
+.project-card {
+  background-color: #111111;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
