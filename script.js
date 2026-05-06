@@ -1,11 +1,11 @@
 // Greeting based on time of day
 var hour = new Date().getHours()
 var greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening"
-document.querySelector(".tagline").textContent = greeting + ", I'm Daniel. Computer scientist who loves chess. ♟️"
+document.querySelector(".tagline").textContent = greeting + ", I'm Daniel. A Computer Scientist."
 
 // Click name for a message
 document.querySelector("h1").addEventListener("click", function() {
-  alert("Yes, I'm Daniel Botchway. Let's build something! ♟️")
+  alert("Yes, I'm Daniel Botchway. Let's build something!")
 })
 
 // Dark/Light mode toggle
